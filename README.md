@@ -1,11 +1,13 @@
 # Lesson-Program-Project-with-Graph-Coloring
 	Bu projemizde Python tabanlı framework olan Flask üzerinden arayüz tasarladık ve çizge renklendirme algoritması ile bir sınıf için ders programı oluşturduk.
+
 	Bu projenin geliştirilme aşamasında python yazılım dili , HTML , CSS ,Bootstrap , MySQL gibi çeşitli teknolojileri kullandık.Arayüz oluşturmak için çeşitli algortimaların yazımı için Python yazılım dilinin Flask kütüphanesini kullandık.Arayüz düzenlemesi için HTML, CSS ve Bootstrap’i ; çeşitli veritabanı işlemleri için MYSQL kullandık.
 
-	ARAYÜZ TASARIMI
+#	ARAYÜZ TASARIMI
 
 	ANA SAYFA: Projenin bu sayfasında templates klasörü içindeki index.html dosyasında kullanılan html, css kodları ile python sayfasında “/” endpointine giden bir sayfa tasarımı yapılmıştır.
- 
+
+ https://private-user-images.githubusercontent.com/89272211/294752375-976d78d1-832e-4355-b931-ed8a1631b0fd.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQ2MjQzMjksIm5iZiI6MTcwNDYyNDAyOSwicGF0aCI6Ii84OTI3MjIxMS8yOTQ3NTIzNzUtOTc2ZDc4ZDEtODMyZS00MzU1LWI5MzEtZWQ4YTE2MzFiMGZkLmpwZWc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEwN1QxMDQwMjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xY2ZkYmYzZmMyOWQwNzUxNTAxNGViYTM3ODYxMGVkNzdjYTZjM2RlYmYzYzU5MGZjNDVkN2VjZTQwNjhiN2MxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.JjvvBn8LL_15Rv0BH8Fh4zOGevxr43XZHQv8GOQubwA
 
 	DERSLER: Projemizin bu sayfasında templates klasörü içindeki lessons.html dosyasında kullanılan html , css kodları ile tasarım yapılmıştır. Python dosyasında tasarlanan “/lessons” endpoint’i ile bu sayfaya erişilmektedir.
  
