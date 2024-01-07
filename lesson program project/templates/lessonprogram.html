@@ -1,0 +1,52 @@
+
+<!--Kodun bu kısmında greedy algoritması ile oluşturulan düğümlerden ders programını sınıflara atamaya çalıştık ancak başarılı olamadık-->
+<!--Bu kısmı hzırlarken çeşitli makalelerden ve yapay zeka araçlarından destek aldık fakat çizge renklendirme algoritması yardımıyla yapılması gereken ders ekleme ilemi istenilen ölçüde tamamlanamadı.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Programı</title>
+    <style>
+        
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        .yellow { background-color: yellow; }
+        .orange { background-color: orange; }
+        .purple { background-color: purple; }
+    </style>
+</head>
+<body>
+    <h3 style="border: 1px solid ; background-color:gray;">1-A</h3>
+    
+
+    <table border="1">
+        <tr>
+            <th>Gün/Ders</th>
+            <th>1.Ders</th>
+            <th>2.Ders</th>
+            <th>3.Ders</th>
+            <th>4.Ders</th>
+            <th>5.Ders</th>
+            <th>6.Ders</th>
+        </tr>
+        
+        {% for gun in günler %}
+            <tr>
+                <td>{{ gun }}</td>
+                
+                {% for ders_saat in derssaati %}
+                    {% set ders_index = loop.index %}
+                    {% set ders = graph[gun][ders_index] %}
+                    {% set renk = renk_atama.get(ders, 'white') %}
+                    <td class="{{ renk }}">{{ dügümler[ders]["lesson"] }}</td>
+                {% endfor %}
+                
+            </tr>
+        {% endfor %}
+    </table>
+    
+
+</body>
+</html>

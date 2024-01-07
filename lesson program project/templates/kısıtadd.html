@@ -1,0 +1,18 @@
+<!--Web arayüzümüzün bu kısmında veritabanına çeşitli öğretmen kısıtları ekleyebilmekteyiz.-->
+{% extends "layout.html" %}
+
+{% block body %}
+{% from "includes/formhelper.html" import render_field %}
+<h3>Kısıt Ekleme Sayfası</h3>
+<hr>
+<form method="post">
+
+    {{ render_field(form.teacher_id, class ="form-control") }}
+    {{ render_field(form.day_constraint,class ="form-control") }}
+    {{ render_field(form.time_around,class ="form-control") }}
+    <button type="submit" class="btn btn-danger">Kaydet</button>
+
+
+</form>
+
+{% endblock body %}

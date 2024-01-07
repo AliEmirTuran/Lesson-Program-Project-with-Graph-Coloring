@@ -1,0 +1,25 @@
+<!--Kodun bu kısmında veritabanındaki öğetmenleri arayüz üzerinde görüntüledik.-->
+{% extends "layout.html" %}
+
+{% block body %}
+<h3 style="text-align: center;">Öğretmenler</h3>
+<hr>
+<ul class="list-group">
+    <table style="border:3px solid #ababab">
+        <tr>
+            <th style="border: 1px solid #dddddd; text-align:left;padding:8px;">Öğretmen Adı</th>
+            <th style="border: 1px solid #dddddd; text-align:left;padding:8px;">Öğretmen Soyadı</th>
+            <th style="border: 1px solid #dddddd; text-align:left;padding:8px;">Öğretmen Branşı</th>
+        </tr>
+    
+        {% for teacher in teachers %}
+            <tr>
+                <td style="border: 1px solid #dddddd; text-align:left;padding:8px;">{{teacher.teacher_name}}</td>
+                <td style="border: 1px solid #dddddd; text-align:left;padding:8px;">{{teacher.teacher_surname}}</td>
+                <td style="border: 1px solid #dddddd; text-align:left;padding:8px;">{{teacher.lesson_name}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</ul>
+{% endblock body %}

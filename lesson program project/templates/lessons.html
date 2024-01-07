@@ -1,0 +1,13 @@
+<!--Dersler tablosunda okulun ders içeriklerini ekledik.-->
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>Dersler</h3>
+<hr>
+<ul class="list-group">
+{% for lesson in lessons  %}
+<li class="list-group-item"><a href="#">{{lesson.lesson_name}}</a></li>
+
+{% endfor %}
+</ul>
+{% endblock body %}

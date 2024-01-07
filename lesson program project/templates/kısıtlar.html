@@ -1,0 +1,32 @@
+<!--Web arayüzümüzün bu kısmında veritabanı üzerinde bulunan kıstları görüntüleyebilmekteyiz.-->
+{% extends "layout.html" %}
+
+{% block body %}
+<h3 style="text-align: center;">Öğretmen Kısıtları</h3>
+<hr>
+<ul class="list-group">
+    <table style="border:3px solid #ababab">
+        <tr>
+            <th style="border: 1px solid #dddddd; text-align:left;padding:8px;">Öğretmen Adı</th>
+            <th style="border: 1px solid #dddddd; text-align:left;padding:8px;">Öğretmen Soyadı</th>
+            <th style="border: 1px solid #dddddd; text-align:left;padding:8px;">Öğretmen Branşı</th>
+            <th style="border: 1px solid #dddddd; text-align:left;padding:8px;">İzin Günü</th>
+            <th style="border: 1px solid #dddddd; text-align:left;padding:8px;">İzin Saati</th>
+
+        </tr>
+    
+        {% for kisit_ in kisit %}
+            <tr>
+                <td style="border: 1px solid #dddddd; text-align:left;padding:8px;">{{kisit_.teacher_name}}</td>
+                <td style="border: 1px solid #dddddd; text-align:left;padding:8px;">{{kisit_.teacher_surname}}</td>
+                <td style="border: 1px solid #dddddd; text-align:left;padding:8px;">{{kisit_.lesson_name}}</td>
+                <td style="border: 1px solid #dddddd; text-align:left;padding:8px;">{{kisit_.day_name}}</td>
+                <td style="border: 1px solid #dddddd; text-align:left;padding:8px;">{{kisit_.lesson_time_around}}</td>
+
+
+            </tr>
+        {% endfor %}
+    </table>
+    
+</ul>
+{% endblock body %}
